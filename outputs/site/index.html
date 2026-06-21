@@ -13,10 +13,7 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="NEX">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-letter">N</span>
-        </span>
-        <span>NEX</span>
+        <span>NE<span>X</span></span>
       </a>
 
       <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-button>
@@ -30,6 +27,8 @@
         <a href="#clientes">Clientes</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <a class="header-cta" href="#contato">Agendar diagnóstico</a>
     </header>
 
     <main id="top">
@@ -37,243 +36,263 @@
         <div class="hero-copy">
           <h1 id="hero-title">Seu braço digital para vender serviços de alto valor</h1>
           <p>
-            Nós estruturamos posicionamento, tráfego, conteúdo, CRM e follow-up para profissionais
-            liberais que não têm tempo de tocar a área comercial.
+            Posicionamento, tráfego, conteúdo, CRM e follow-up operando juntos para transformar
+            reputação em conversas qualificadas.
           </p>
           <div class="hero-actions" aria-label="Ações principais">
-            <a class="button primary" href="#contato">
-              Quero vender com consistência
+            <a class="button primary" href="#contato">Agendar diagnóstico</a>
+            <a class="button text-link" href="#operacao">
+              Ver operação
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h13m-5-5 5 5-5 5" />
               </svg>
             </a>
-            <a class="button secondary" href="#operacao">Ver operação</a>
           </div>
         </div>
 
-        <div class="hero-media" aria-label="Mesa de trabalho comercial organizada">
-          <img src="./assets/hero-workspace.png" alt="Mesa de trabalho com agenda, notebook, propostas e materiais de planejamento comercial" />
-          <div class="operation-card" aria-label="Resumo de operação comercial">
-            <span>Operação em andamento</span>
-            <strong>Follow-up sem depender da sua agenda</strong>
-            <ol>
-              <li>Lead qualificado</li>
-              <li>Diagnóstico marcado</li>
-              <li>Próximo contato registrado</li>
-            </ol>
+        <aside class="ops-panel" aria-label="Painel de operação comercial">
+          <div class="panel-head">
+            <strong>Painel de operação</strong>
+            <span>Esta semana</span>
           </div>
-        </div>
+
+          <div class="panel-grid">
+            <section class="panel-box pipeline-box" aria-labelledby="pipeline-title">
+              <h2 id="pipeline-title">Funil de oportunidades</h2>
+              <ol class="pipeline-list">
+                <li><span>Novos leads</span><strong>24</strong></li>
+                <li><span>Contato realizado</span><strong>16</strong></li>
+                <li><span>Reunião agendada</span><strong>9</strong></li>
+                <li><span>Proposta enviada</span><strong>4</strong></li>
+                <li><span>Negociação</span><strong>3</strong></li>
+                <li><span>Fechado</span><strong>2</strong></li>
+              </ol>
+              <a href="#operacao">Ver funil completo</a>
+            </section>
+
+            <section class="panel-box follow-box" aria-labelledby="follow-title">
+              <h2 id="follow-title">Fila de follow-up</h2>
+              <ul class="follow-list">
+                <li>
+                  <span class="avatar coral">RF</span>
+                  <div>
+                    <strong>Ricardo Freitas</strong>
+                    <small>Retorno sobre proposta</small>
+                  </div>
+                  <time>09:30</time>
+                </li>
+                <li>
+                  <span class="avatar blue">AC</span>
+                  <div>
+                    <strong>Ana Clarice</strong>
+                    <small>Enviar estudo de caso</small>
+                  </div>
+                  <time>Hoje</time>
+                </li>
+                <li>
+                  <span class="avatar green">MR</span>
+                  <div>
+                    <strong>Marina Rezende</strong>
+                    <small>Acompanhar reunião</small>
+                  </div>
+                  <time>Amanhã</time>
+                </li>
+              </ul>
+              <a href="#contato">Ver fila completa</a>
+            </section>
+
+            <section class="panel-box action-box" aria-labelledby="action-title">
+              <h2 id="action-title">Próxima ação</h2>
+              <strong>Ricardo Freitas</strong>
+              <p>Retorno sobre proposta</p>
+              <span class="time-chip">Hoje, 09:30</span>
+              <dl>
+                <div>
+                  <dt>Canal</dt>
+                  <dd>Instagram</dd>
+                </div>
+                <div>
+                  <dt>Origem</dt>
+                  <dd>Conteúdo</dd>
+                </div>
+              </dl>
+              <a class="mini-button" href="#contato">Abrir contato</a>
+            </section>
+
+            <section class="panel-box chart-box" aria-labelledby="chart-title">
+              <h2 id="chart-title">Conversas qualificadas</h2>
+              <div class="chart" aria-hidden="true">
+                <svg viewBox="0 0 320 150">
+                  <path class="grid-line" d="M24 25h274M24 65h274M24 105h274" />
+                  <path class="chart-line" d="M24 112 C58 74, 82 78, 112 92 S160 30, 198 46 S252 102, 298 50" />
+                  <circle cx="298" cy="50" r="5" />
+                </svg>
+              </div>
+              <div class="chart-days" aria-hidden="true">
+                <span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sab</span><span>Dom</span>
+              </div>
+            </section>
+
+            <section class="panel-box tasks-box" aria-labelledby="tasks-title">
+              <h2 id="tasks-title">Atividades do dia</h2>
+              <label><input type="checkbox" checked /> Enviar proposta</label>
+              <label><input type="checkbox" checked /> Ligar para Ana Clarice</label>
+              <label><input type="checkbox" /> Acompanhar reunião</label>
+              <label><input type="checkbox" /> Revisar follow-ups</label>
+            </section>
+          </div>
+        </aside>
       </section>
 
-      <section class="problem" id="oferta" aria-labelledby="problem-title">
-        <div class="section-intro">
-          <h2 id="problem-title">Enquanto você atende, a máquina comercial continua rodando</h2>
-          <p>
-            A NEX entra onde normalmente sobra improviso: transformar reputação,
-            indicação e conteúdo em uma rotina previsível de conversas qualificadas.
-          </p>
-        </div>
-
-        <div class="problem-layout">
-          <div class="problem-copy">
-            <p>
-              Profissionais excelentes costumam vender em janelas apertadas entre uma consulta,
-              uma reunião de obra, uma entrega técnica ou um plantão de atendimento. O resultado é
-              uma área comercial que só funciona quando sobra tempo.
-            </p>
-            <p>
-              Nosso trabalho é assumir a esteira digital: oferta, canais, cadência, CRM e retorno
-              para que cada oportunidade tenha contexto, prioridade e próximo passo.
-            </p>
-          </div>
-          <div class="pain-list" aria-label="Problemas comerciais comuns">
-            <article>
-              <span class="list-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" /></svg>
-              </span>
-              <div>
-                <h3>Agenda cheia, funil vazio</h3>
-                <p>Atendimento ocupa o dia, mas prospecção e relacionamento ficam sem dono.</p>
-              </div>
-            </article>
-            <article>
-              <span class="list-icon coral" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h8M7 16h5" /></svg>
-              </span>
-              <div>
-                <h3>Conteúdo sem continuidade</h3>
-                <p>Postagens acontecem, mas raramente viram conversa, proposta e acompanhamento.</p>
-              </div>
-            </article>
-            <article>
-              <span class="list-icon olive" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6 7h12v10H6zM9 10h6M9 14h4" /></svg>
-              </span>
-              <div>
-                <h3>Leads sem critério</h3>
-                <p>Oportunidades chegam misturadas, sem qualificação clara nem roteiro de retorno.</p>
-              </div>
-            </article>
-          </div>
+      <section class="steps" id="oferta" aria-labelledby="steps-title">
+        <h2 id="steps-title">Como funciona</h2>
+        <div class="step-row">
+          <article>
+            <span>1</span>
+            <h3>Posicionamos</h3>
+            <p>Definimos oferta, mensagem e prova para atrair o cliente certo.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Geramos conversas</h3>
+            <p>Criamos e distribuímos conteúdo, atraímos tráfego e qualificamos interesse.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Convertemos com consistência</h3>
+            <p>CRM, follow-up e playbooks garantem ritmo, previsibilidade e mais contratos.</p>
+          </article>
         </div>
       </section>
 
       <section class="operation" id="operacao" aria-labelledby="operation-title">
-        <div class="section-intro narrow">
-          <h2 id="operation-title">Uma operação comercial para quem vende conhecimento</h2>
-          <p>
-            Cada frente tem um papel simples: posicionar bem, atrair a pessoa certa, nutrir a
-            decisão e manter o próximo passo vivo.
-          </p>
+        <div class="section-heading">
+          <h2 id="operation-title">Nossa operação</h2>
+          <p>Uma estrutura completa trabalhando pelo seu crescimento.</p>
         </div>
 
-        <div class="service-rail" aria-label="Frentes da operação">
-          <article class="service-item active">
-            <span>01</span>
-            <h3>Posicionamento</h3>
-            <p>Oferta clara, recorte de público, promessa responsável e linguagem de autoridade.</p>
-          </article>
-          <article class="service-item">
-            <span>02</span>
-            <h3>Captação</h3>
-            <p>Canais, anúncios e pontos de entrada desenhados para demanda qualificada.</p>
-          </article>
-          <article class="service-item">
-            <span>03</span>
-            <h3>Nutrição</h3>
-            <p>Conteúdo e mensagens que sustentam confiança antes da conversa comercial.</p>
-          </article>
-          <article class="service-item">
-            <span>04</span>
-            <h3>Follow-up</h3>
-            <p>Cadência organizada para não perder oportunidades por silêncio ou atraso.</p>
-          </article>
-          <article class="service-item">
-            <span>05</span>
-            <h3>Agenda qualificada</h3>
-            <p>Conversas com contexto, intenção e critérios mínimos para avançar.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="clients" id="clientes" aria-labelledby="clients-title">
-        <div class="clients-copy">
-          <h2 id="clients-title">Feito para negócios em que confiança vende antes do preço</h2>
-          <p>
-            A abordagem muda por especialidade, mas a lógica é a mesma: reduzir ruído, elevar
-            percepção de valor e criar rotina comercial sem roubar horas do atendimento.
-          </p>
-        </div>
-
-        <div class="segment-panel">
-          <div class="segment-tabs" role="tablist" aria-label="Segmentos atendidos">
-            <button class="segment-tab active" type="button" role="tab" aria-selected="true" data-segment="arquitetos">
-              Arquitetos
-            </button>
-            <button class="segment-tab" type="button" role="tab" aria-selected="false" data-segment="engenheiros">
-              Engenheiros
-            </button>
-            <button class="segment-tab" type="button" role="tab" aria-selected="false" data-segment="medicos">
-              Médicos
-            </button>
-            <button class="segment-tab" type="button" role="tab" aria-selected="false" data-segment="clinicas">
-              Clínicas
-            </button>
-          </div>
-          <div class="segment-content" aria-live="polite">
-            <span class="segment-icon" aria-hidden="true" data-segment-icon>
-              <svg viewBox="0 0 24 24"><path d="m4 20 8-16 8 16M8 14h8" /></svg>
+        <div class="operation-grid" aria-label="Frentes da operação NEX">
+          <article>
+            <span class="line-icon target" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 1 9-9M12 17a5 5 0 1 1 5-5M12 13a1 1 0 1 1 1-1M17 7l4-4M17 3h4v4" /></svg>
             </span>
-            <h3 data-segment-title>Arquitetos</h3>
-            <p data-segment-text>
-              Projetos autorais precisam de portfólio, narrativa e conversas que filtrem orçamento,
-              prazo e estilo antes da reunião.
-            </p>
-          </div>
+            <h3>Estratégia & Posicionamento</h3>
+            <p>Clareza de oferta, ICP, promessa e diferenciais que geram desejo e autoridade.</p>
+          </article>
+          <article>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 13h3l10 5V6L7 11H4v2ZM7 11v6M18 9l3-2M18 15l3 2" /></svg>
+            </span>
+            <h3>Tráfego & Aquisição</h3>
+            <p>Campanhas e conteúdos que atraem o público certo com eficiência.</p>
+          </article>
+          <article>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4" /></svg>
+            </span>
+            <h3>Conteúdo & Prova</h3>
+            <p>Produzimos conteúdos que educam, demonstram método e constroem confiança.</p>
+          </article>
+          <article>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM16 13a4 4 0 1 0 0-8M2 21a6 6 0 0 1 12 0M14 21a6 6 0 0 1 8-5.6" /></svg>
+            </span>
+            <h3>CRM & Processos</h3>
+            <p>Organização do funil, etapas claras e automações que trazem produtividade.</p>
+          </article>
+          <article>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" /></svg>
+            </span>
+            <h3>Follow-up & Conversão</h3>
+            <p>Cadência, mensagens e acompanhamento para transformar interesse em contrato.</p>
+          </article>
         </div>
       </section>
 
-      <section class="process" aria-labelledby="process-title">
-        <div class="section-intro">
-          <h2 id="process-title">Do diagnóstico ao próximo passo comercial</h2>
-          <p>
-            A operação começa pequena o bastante para ficar clara e disciplinada o suficiente para
-            não depender de inspiração.
-          </p>
+      <section class="segments" id="clientes" aria-labelledby="segments-title">
+        <div class="section-heading">
+          <h2 id="segments-title">Feito para quem presta serviços de alto valor</h2>
         </div>
 
-        <div class="timeline" aria-label="Processo de trabalho">
+        <div class="segment-grid">
           <article>
-            <span>1</span>
-            <h3>Diagnóstico</h3>
-            <p>Entendemos serviço, margem, ciclo de decisão, público e gargalos atuais.</p>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14M8 21v-6h8v6M8 10h.01M12 10h.01M16 10h.01" /></svg>
+            </span>
+            <h3>Arquitetos</h3>
+            <p>Atraia projetos melhores e posicione seu escritório com autoridade no seu nicho.</p>
+            <a href="#contato">Saiba mais</a>
           </article>
           <article>
-            <span>2</span>
-            <h3>Oferta</h3>
-            <p>Organizamos mensagem, argumentos e critérios para qualificar oportunidades.</p>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 18h16M6 18v-4a6 6 0 0 1 12 0v4M9 14V9M15 14V9M8 9h8" /></svg>
+            </span>
+            <h3>Engenheiros</h3>
+            <p>Gere oportunidades qualificadas para projetos, laudos e consultorias técnicas.</p>
+            <a href="#contato">Saiba mais</a>
           </article>
           <article>
-            <span>3</span>
-            <h3>Canais</h3>
-            <p>Ativamos conteúdo, tráfego e pontos de captura com cadência realista.</p>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4v10M8 8h8M7 14a5 5 0 0 0 10 0M7 14H5a3 3 0 0 1-3-3V8M17 14h2a3 3 0 0 0 3-3V8" /></svg>
+            </span>
+            <h3>Médicos</h3>
+            <p>Encha sua agenda com pacientes certos e fortaleça sua reputação digital.</p>
+            <a href="#contato">Saiba mais</a>
           </article>
           <article>
-            <span>4</span>
-            <h3>CRM</h3>
-            <p>Registramos estágio, contexto, retorno e prioridade de cada conversa.</p>
-          </article>
-          <article>
-            <span>5</span>
-            <h3>Agenda</h3>
-            <p>Entregamos reuniões com motivo, histórico e próximo passo recomendado.</p>
+            <span class="line-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 21V6h16v15M9 6V3h6v3M9 13h6M12 10v6" /></svg>
+            </span>
+            <h3>Clínicas</h3>
+            <p>Atraia, converta e fidelize pacientes com processos comerciais profissionais.</p>
+            <a href="#contato">Saiba mais</a>
           </article>
         </div>
       </section>
 
       <section class="contact" id="contato" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <h2 id="contact-title">Agendar diagnóstico</h2>
+          <h2 id="contact-title">Vamos conversar sobre seu crescimento?</h2>
           <p>
-            Conte rapidamente qual serviço você vende e onde a rotina comercial trava hoje. A
-            resposta aparece organizada para você já saber o próximo passo.
+            Preencha o formulário e agende um diagnóstico sem compromisso. Vamos entender seu
+            cenário e mostrar o melhor caminho.
           </p>
-          <div class="contact-note">
-            <strong>Bom encaixe:</strong>
-            profissionais e empresas de serviço com ticket consultivo, reputação construída e pouco
-            tempo para prospecção manual.
-          </div>
         </div>
 
         <form class="lead-form" data-lead-form>
+          <div class="form-row">
+            <label>
+              Nome
+              <input name="name" type="text" placeholder="Seu nome" autocomplete="name" required />
+            </label>
+            <label>
+              E-mail
+              <input name="email" type="email" placeholder="seu@email.com" autocomplete="email" required />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              WhatsApp
+              <input name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" required />
+            </label>
+            <label>
+              Segmento
+              <select name="segment" required>
+                <option value="">Selecione</option>
+                <option>Arquitetura</option>
+                <option>Engenharia</option>
+                <option>Medicina</option>
+                <option>Clínica</option>
+                <option>Outro serviço consultivo</option>
+              </select>
+            </label>
+          </div>
           <label>
-            Nome
-            <input name="name" type="text" autocomplete="name" required />
+            Fale sobre seu negócio e principais objetivos
+            <textarea name="message" placeholder="Escreva aqui..." required></textarea>
           </label>
-          <label>
-            Empresa ou especialidade
-            <input name="company" type="text" autocomplete="organization" required />
-          </label>
-          <label>
-            WhatsApp
-            <input name="phone" type="tel" autocomplete="tel" required />
-          </label>
-          <label>
-            Objetivo comercial
-            <select name="goal" required>
-              <option value="">Selecione uma prioridade</option>
-              <option>Gerar mais conversas qualificadas</option>
-              <option>Organizar CRM e follow-up</option>
-              <option>Reposicionar oferta de alto valor</option>
-              <option>Assumir conteúdo e tráfego</option>
-            </select>
-          </label>
-          <button class="button primary form-button" type="submit">
-            Agendar diagnóstico
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 12h13m-5-5 5 5-5 5" />
-            </svg>
-          </button>
+          <button class="button primary form-button" type="submit">Agendar diagnóstico</button>
           <p class="form-status" role="status" data-form-status></p>
         </form>
       </section>
@@ -281,12 +300,13 @@
 
     <footer class="footer">
       <a class="brand small" href="#top" aria-label="NEX">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-letter">N</span>
-        </span>
-        <span>NEX</span>
+        <span>NE<span>X</span></span>
       </a>
       <span>Operação digital e comercial para serviços de alto valor.</span>
+      <div>
+        <a href="#top">Política de Privacidade</a>
+        <a href="#top">Termos de Uso</a>
+      </div>
     </footer>
 
     <script src="./script.js"></script>
