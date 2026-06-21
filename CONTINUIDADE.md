@@ -65,6 +65,17 @@ git pull
 
 ## Registro De Sessões
 
+### Redesign Clean Inspirado Na Soro
+
+- Redesenhada a landing page da NEX com uma direção mais limpa, clara e SaaS-like, inspirada no conceito visual de `trysoro.com`, sem copiar marca, layout exato, textos ou elementos proprietários.
+- Hero trocado de imagem editorial para um painel operacional code-native com funil, fila de follow-up, próxima ação, gráfico simples e atividades do dia.
+- Seções reorganizadas para: hero, Como funciona, Nossa operação, segmentos atendidos e formulário de contato.
+- Paleta simplificada para fundo branco, texto graphite, bordas cinza claras, teal como cor principal e coral apenas como apoio.
+- Formulário atualizado para Nome, E-mail, WhatsApp, Segmento e mensagem.
+- JavaScript simplificado para menu mobile e mensagem local de envio do formulário.
+- Validação realizada por inspeção de arquivos: HTML parseado, sem marcadores de conflito/TODO e sem referências antigas de lógica de segmentos.
+- Observação: a captura visual via navegador interno foi bloqueada pela política de URL `file://`; conferir visualmente recarregando `outputs/site/index.html` na aba do Codex.
+
 ### Retomada No Mac
 
 - Repositório clonado com sucesso no macOS após tornar o GitHub público temporariamente.
