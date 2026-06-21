@@ -12,11 +12,16 @@ outputs/site/index.html
 
 ## Estrutura
 
+- `CONTINUIDADE.md`: memória oficial para alternar entre Mac, Windows e Codex
 - `outputs/site/index.html`: página principal
 - `outputs/site/styles.css`: estilos e responsivo
 - `outputs/site/script.js`: interações locais
 - `outputs/site/assets/`: imagens usadas no site
 - `outputs/continuar-no-macos.md`: handoff para continuar no macOS
+
+## Continuidade
+
+Use `CONTINUIDADE.md` para registrar decisões, pendências e o estado do projeto ao final de cada sessão. O histórico do chat pode variar entre máquinas, mas esse arquivo acompanha o repositório pelo GitHub.
 
 ## Próximas etapas
 
